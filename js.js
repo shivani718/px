@@ -76,9 +76,6 @@ aptrinsic("identify",
       
             return false;
     }
-          else{
-              alert("wrong username / password");
-        }
     }
     
 function deleteAllCookies() {
