@@ -6,7 +6,7 @@
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-EMCLD0J9SEPQ-2");
 
-function login()
+function login(username)
     {
         var username=document.getElementById("username").value;
         var password=document.getElementById("password").value;
@@ -35,7 +35,7 @@ aptrinsic("identify",
     "id": myaccount.a4, //Required
     "name": myaccount.a4,
  });
-        }else if((username=="shivanicheemala99@gmail.com"){
+        }else if(username=="shivanicheemala99@gmail.com"){
           
          //passing user and account objects:
 aptrinsic("identify",
