@@ -50,15 +50,38 @@ aptrinsic("identify",
     "name": myaccount.a3,
  });
         }
-         location.href ="home.html";
+        // location.href ="home.html";
         }
         else
         {
-            alert("wrong username / password");
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a1, //Required
+                            "name": myaccount.a1,
+                            // flat custom attributes
+                        });
+                }
+
+            alert("Logged in user id :" + b);
+            //window.open("/HTML/home.html");
+            window.location = "https://shivani718.github.io/px/home.html";
+      
+            return false;
+    }
+          else{
+              alert("wrong username / password");
         }
     }
-
-    function deleteAllCookies() {
+    
+function deleteAllCookies() {
     window.aptrinsic('reset');
     counter = 0;
 }
