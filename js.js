@@ -76,7 +76,6 @@ aptrinsic("identify",
       
             return false;
     }
-    }
     
 function deleteAllCookies() {
     window.aptrinsic('reset');
