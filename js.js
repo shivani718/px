@@ -8,7 +8,7 @@
 
 function login()
     {
-        var userName=document.getElementById("username").value;
+        var username=document.getElementById("username").value;
         var password=document.getElementById("password").value;
       const myaccount = {
         a1: "PX_Company-1",
@@ -17,32 +17,32 @@ function login()
         a4: "PX_Company-4"
 
     }
-        if(userName=="shivani.reddy00@gmail.com"||userName=="shivanicheemala99@gmail.com" &&password=="admin")
+        if(username=="shivani.reddy00@gmail.com"||username=="shivanicheemala99@gmail.com" &&password=="admin")
         {
           b = username.substr(8, 6);
             var id = b;
-        if(userName=="shivani.reddy00@gmail.com"){
+        if(username=="shivani.reddy00@gmail.com"){
           
          //passing user and account objects:
 aptrinsic("identify",
   {
   //User Fields
     "id": id // Required for logged in app users
-    "email": userName
+    "email": username
   },
   {
   //Account Fields
     "id": myaccount.a4, //Required
     "name": myaccount.a4,
  });
-        }else if((userName=="shivanicheemala99@gmail.com"){
+        }else if((username=="shivanicheemala99@gmail.com"){
           
          //passing user and account objects:
 aptrinsic("identify",
   {
   //User Fields
     "id": id // Required for logged in app users
-    "email": userName
+    "email": username
   },
   {
   //Account Fields
