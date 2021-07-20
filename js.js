@@ -17,7 +17,7 @@ function login()
         a4: "PX_Company-4"
 
     }
-        if(username=="shivani.reddy00@gmail.com"||username=="shivanicheemala99@gmail.com" &&password=="admin")
+        if(username=="shivani.reddy00@gmail.com"||username=="shivanicheemala99@gmail.com" ||username=="demouser99@gmail.com" &&password=="admin")
         {
           b = username.substr(8, 6);
             var id = b;
