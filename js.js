@@ -27,8 +27,8 @@ function login()
 aptrinsic("identify",
   {
   //User Fields
-    "id": id // Required for logged in app users
-    "email": username
+    "id": id, // Required for logged in app users
+    "email": username,
   },
   {
   //Account Fields
@@ -41,8 +41,8 @@ aptrinsic("identify",
 aptrinsic("identify",
   {
   //User Fields
-    "id": id // Required for logged in app users
-    "email": username
+    "id": id, // Required for logged in app users
+    "email": username,
   },
   {
   //Account Fields
