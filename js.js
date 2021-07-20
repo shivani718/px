@@ -57,4 +57,8 @@ aptrinsic("identify",
             alert("wrong username / password");
         }
     }
-    
+
+    function deleteAllCookies() {
+    window.aptrinsic('reset');
+    counter = 0;
+}
