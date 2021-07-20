@@ -6,7 +6,7 @@
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-EMCLD0J9SEPQ-2");
 
-function login(username)
+function login()
     {
         var username=document.getElementById("username").value;
         var password=document.getElementById("password").value;
