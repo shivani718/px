@@ -307,6 +307,16 @@ li a:hover {
 	margin:0px;
 	color: black;
 }
+.product{
+	font-family: "Roboto", sans-serif;
+	font size: 15px;
+	text-align: left;
+	outline: 1;
+	margin: 2px;
+	padding: 15px;
+}
+
+	
 
 
 
