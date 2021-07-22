@@ -17,7 +17,7 @@ function login()
         a4: "PX_Company-4"
 
     }
-        if(username=="shivani.reddy00@gmail.com"||username=="shivanicheemala99@gmail.com" ||username=="demouser99@gmail.com" &&password=="admin")
+        if(username=="shivani.reddy00@gmail.com"||username=="scheemala@gainsight.com" ||username=="demouser99@gmail.com" &&password=="admin")
         {
           b = username.substr(8, 6);
             var id = b;
@@ -39,7 +39,7 @@ aptrinsic("identify",
     "id": myaccount.a4, //Required
     "name": myaccount.a4,
  });
-        }else if(username=="shivanicheemala99@gmail.com"){
+        }else if(username=="scheemala@gainsight.com"){
           
          //passing user and account objects:
 aptrinsic("identify",
