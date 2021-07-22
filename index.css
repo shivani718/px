@@ -307,15 +307,21 @@ li a:hover {
 	margin:0px;
 	color: black;
 }
-.product{
-	font-family: "Roboto", sans-serif;
-	font size: 15px;
-	text-align: left;
-	outline: 1;
-	margin: 2px;
-	padding: 15px;
+.radio-form{
+    text-align: justify;
+    margin-left: 40%;
+    margin-top: 40px;
 }
-
+.btn-sendmail{
+	border-radius: 20px;
+	color: #fff;
+	margin-top: 18px;
+	padding: 10px;
+	background-color: #47c35a;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
 	
 
 
