@@ -54,6 +54,21 @@ aptrinsic("identify",
     "name": myaccount.a3,
  });
         }
+          else if(username=="demouser99@gmail.com"){
+          
+         //passing user and account objects:
+aptrinsic("identify",
+  {
+  //User Fields
+    "id": id, // Required for logged in app users
+    "email": username,
+  },
+  {
+  //Account Fields
+    "id": myaccount.a2, //Required
+    "name": myaccount.a2,
+ });
+        }
         // location.href ="home.html";
         }
         else
