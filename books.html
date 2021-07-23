@@ -46,6 +46,7 @@
 				<option value="">--please choose a product--</option>
 				<option id="producttName" label="Product-1">product1</option>
 				<option id="productName" label="Product-2">product2</option>
+				<option id="productName" label="Product-3">product3</option>
 			</select>
 			
 			<script type="text/javascript">
@@ -54,9 +55,13 @@
 						document.getElementById("productName").innerHTML="product-1  ";
 						aptrinsic("track","productchange",{"proname":"product-1","selected":true});
 					}
-					else{
+					else if(this.selectIndex==2){
 						document.getElementById("productName").innerHTML="product-2  ";
 						aptrinsic("track","productchange",{"proname":"product-2","selected":true});
+					}
+					else{
+						document.getElementById("productName").innerHTML="product-3  ";
+						aptrinsic("track","productchange",{"proname":"product-3","selected":true});
 					}
 				});
 			</script>
