@@ -50,7 +50,7 @@
 			</select>
 			
 			<script type="text/javascript">
-				document.getElementById('productid').addEventListener('change',function(ev){
+				document.getElementById('productid').addEventListener('change',function(){
 					if(this.selectIndex==1){
 						document.getElementById("productName").innerHTML="product-1  ";
 						aptrinsic("track","productchange",{"proname":"product-1","selected":true});
