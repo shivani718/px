@@ -42,18 +42,18 @@
 
 			<select id="productid">
 				<option value="">--please choose a product--</option>
-				<option id="producttName" label="Product-1">project1</option>
-				<option id="productName" label="Product-2">project2</option>
+				<option id="producttName" label="Product-1">product1</option>
+				<option id="productName" label="Product-2">product2</option>
 			</select>
 			
 			<script type="text/javascript">
 				document.getElementById('productid').addEventListener('change',function(ev){
 					if(this.selectIndex==1){
-						document.getElementById("productName").innerHTML="project-1  ";
+						document.getElementById("productName").innerHTML="product-1  ";
 						aptrinsic("track","productchange",{"proname":"product-1","selected":true});
 					}
 					else{
-						document.getElementById("productName").innerHTML="project-2  ";
+						document.getElementById("productName").innerHTML="product-2  ";
 						aptrinsic("track","productchange",{"proname":"product-2","selected":true});
 					}
 				});
