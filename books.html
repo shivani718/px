@@ -38,6 +38,26 @@
   <br>
   <input class="btn-sendmail" type="submit" value="Submit">
 </form>
+		<h3>please select the project</h3>
+
+			<select id="productid">
+				<option value="">--please choose a project--</option>
+				<option id="producttName" label="Product-1">project1</option>
+				<option id="productName" label="Product-2">project2</option>
+			</select>
+			
+			<script type="text/javascript">
+				document.getElementById('productid').addEventListener('change',function(ev){
+					if(this.selectIndex==1){
+						document.getElementById("productName").innerHTML="project-1  ";
+						aptrinsic("track","productchange",{"proname":"product-1","selected":true});
+					}
+					else{
+						document.getElementById("productName").innerHTML="project-2  ";
+						aptrinsic("track","productchange",{"proname":"product-2","selected":true});
+					}
+				});
+			</script>
 </div>
 	<span id="paymentbtn">
 
