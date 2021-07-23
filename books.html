@@ -51,17 +51,17 @@
 			
 			<script type="text/javascript">
 				document.getElementById('productid').addEventListener('change',function(){
-					if(this.selectIndex==1){
+					if(this.selectedIndex==1){
 						alert(this.selectIndex);
 						document.getElementById("productName").innerHTML="product-1";
 						aptrinsic("track","productchange",{"proname":"product-1","selected":true});
 					}
-					if(this.selectIndex==2){
+					if(this.selectedIndex==2){
 						alert(this.selectIndex);
 						document.getElementById("productName").innerHTML="product-2";
 						aptrinsic("track","productchange",{"proname":"product-2","selected":true});
 					}
-					if(this.selectIndex==3){
+					if(this.selectedIndex==3){
 						alert(this.selectIndex);
 						document.getElementById("productName").innerHTML="product-3";
 						aptrinsic("track","productchange",{"proname":"product-3","selected":true});
