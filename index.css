@@ -337,7 +337,7 @@ li a:hover {
 }
 .sampbtn1 {
   background-color: black; 
-  color: black; 
+  color: red; 
   border: #111;
   outline: none;
 }
