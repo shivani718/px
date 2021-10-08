@@ -17,7 +17,7 @@ function login()
         a4: "PX_Company-4"
 
     }
-        if(username=="shivani.reddy00@gmail.com"||username=="scheemala@gainsight.com" ||username=="demouser99@gmail.com" &&password=="admin")
+        if(username=="shivani.reddy00@gmail.com" || username=="scheemala@gainsight.com" || username=="demouser99@gmail.com" && password=="admin")
         {
           b = username.substr(8, 6);
             var id = b;
@@ -29,7 +29,7 @@ aptrinsic("identify",
   //User Fields
     "id": id, // Required for logged in app users
     "email": username,
-    "college_id" :1209A
+    "college_id" : 1209A
     }
   },
   {
