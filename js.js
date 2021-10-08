@@ -29,7 +29,7 @@ aptrinsic("identify",
   //User Fields
     "id": id, // Required for logged in app users
     "email": username,
-    "college_id" :"1209A"
+    "college_id" :1209A
     }
   },
   {
