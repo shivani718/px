@@ -6,7 +6,7 @@
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-EMCLD0J9SEPQ-2");
 
-function login()
+function login(username)
     {
         var username=document.getElementById("username").value;
         var password=document.getElementById("password").value;
@@ -17,6 +17,7 @@ function login()
         a4: "PX_Company-4"
 
     }
+      if(username!=""){
         if(username=="shivani.reddy00@gmail.com" || username=="scheemala@gainsight.com" || username=="demouser99@gmail.com" && password=="admin")
         {
           b = username.substr(8, 6);
@@ -93,6 +94,7 @@ aptrinsic("identify",
       
             return false;
     }
+}
     
 function deleteAllCookies() {
     window.aptrinsic('reset');
