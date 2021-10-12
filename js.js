@@ -31,7 +31,6 @@ aptrinsic("identify",
     "id": id, // Required for logged in app users
     "email": username,
     "college_id" : "1209A"
-    }
   },
   {
   //Account Fields
