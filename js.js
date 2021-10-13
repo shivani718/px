@@ -30,7 +30,8 @@ aptrinsic("identify",
   //User Fields
     "id": id, // Required for logged in app users
     "email": username,
-    "college_id" : "1209A"
+    "college_id" : "1209A" ,
+    "inProductPromotions" : 1
   },
   {
   //Account Fields
@@ -45,6 +46,8 @@ aptrinsic("identify",
   //User Fields
     "id": id, // Required for logged in app users
     "email": username,
+   "college_id" : "1209A" ,
+   "inProductPromotions" : 1
   },
   {
   //Account Fields
@@ -60,6 +63,8 @@ aptrinsic("identify",
   //User Fields
     "id": id, // Required for logged in app users
     "email": username,
+    "college_id" : "1209A" ,
+    "inProductPromotions" : 1
   },
   {
   //Account Fields
@@ -74,7 +79,9 @@ aptrinsic("identify",
                     aptrinsic('identify', {
                             //User Fields
                             "id": id, // Required for logged in app users
-                            "email": username
+                            "email": username,
+                            "college_id" : "1209A" ,
+                            "inProductPromotions" : 1
 
                             // "userHash": hash.toString()// optional transient for HMAC identification
                         },
