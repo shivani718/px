@@ -74,6 +74,8 @@ aptrinsic("identify",
     "id": myaccount.a2, //Required
     "name": myaccount.a2,
  });
+      }
+          
         }
         // location.href ="home.html";
         else
