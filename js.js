@@ -76,7 +76,6 @@ aptrinsic("identify",
  });
         }
         // location.href ="home.html";
-        }
         else
         {
                     aptrinsic('identify', {
