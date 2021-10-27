@@ -1,6 +1,4 @@
-
-
-  (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
@@ -76,7 +74,6 @@ aptrinsic("identify",
  });
       }
           
-        }
         // location.href ="home.html";
         else
         {
@@ -104,8 +101,10 @@ aptrinsic("identify",
             window.location = "https://shivani718.github.io/px/home.html";
       
             return false;
-}
-    
+ }
+      }
+    }
+        
 function deleteAllCookies() {
     window.aptrinsic('reset');
     counter = 0;
@@ -187,4 +186,3 @@ function transactiondone(ev1) {
         Paymentstatus: ev1.detail.Paymentstatus
     });
 }
-
