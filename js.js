@@ -37,8 +37,6 @@ aptrinsic("identify",
     "id": myaccount.a4, //Required
     "name": myaccount.a4,
     "GPremiumlarge": 1,
-    "GPremiummedium":
-    "GPremiumsmall":
  });
         }else if(username=="scheemala@gainsight.com"){
           
@@ -56,9 +54,6 @@ aptrinsic("identify",
   //Account Fields
     "id": myaccount.a3, //Required
     "name": myaccount.a3,
-    "GPremiumlarge":
-    "GPremiummedium":
-    "GPremiumsmall":
  });
         }
           else if(username=="demouser99@gmail.com"){
@@ -78,7 +73,6 @@ aptrinsic("identify",
     "id": myaccount.a2, //Required
     "name": myaccount.a2,
     "GPremiumlarge": 2,
-    "GPremiummedium":
     "GPremiumsmall": 1
  });
       }
