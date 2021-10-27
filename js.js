@@ -48,7 +48,7 @@ aptrinsic("identify",
     "id": id, // Required for logged in app users
     "email": username,
    "college_id" : "1209A" ,
-   "inProductPromotions" : 1
+   "inProductPromotions" : 1 ,
    "versionA" : 20
   },
   {
@@ -66,7 +66,7 @@ aptrinsic("identify",
     "id": id, // Required for logged in app users
     "email": username,
     "college_id" : "1209A" ,
-    "inProductPromotions" : 1
+    "inProductPromotions" : 1 ,
     "versionA" : 20
   },
   {
@@ -85,7 +85,7 @@ aptrinsic("identify",
                             "id": id, // Required for logged in app users
                             "email": username,
                             "college_id" : "1209A" ,
-                            "inProductPromotions" : 1
+                            "inProductPromotions" : 1 ,
                             "versionA" : 20
                       
                             // "userHash": hash.toString()// optional transient for HMAC identification
