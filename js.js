@@ -74,7 +74,7 @@ aptrinsic("identify",
   //Account Fields
     "id": myaccount.a2, //Required
     "name": myaccount.a2,
-    "GPremiumlarge": 2,
+    "GPremiumlarge": 0,
     "GPremiumsmall": 1
  });
       }
