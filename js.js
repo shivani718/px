@@ -103,7 +103,6 @@ aptrinsic("identify",
             window.location = "https://shivani718.github.io/px/home.html";
       
             return false;
-    }
 }
     
 function deleteAllCookies() {
