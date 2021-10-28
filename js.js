@@ -194,3 +194,15 @@ function transactiondone(ev1) {
         Paymentstatus: ev1.detail.Paymentstatus
     });
 }
+
+aptrinsic('kcb', 'open');
+aptrinsic('kcb', 'open', {
+  onDone: console.log
+});
+aptrinsic('kcb', 'open', {
+  onError: console.error
+});
+aptrinsic('kcb', 'open', {
+  onDone: console.log,
+  onError: console.error
+});
