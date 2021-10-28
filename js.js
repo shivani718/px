@@ -50,7 +50,7 @@ aptrinsic("identify",
    "college_id" : "1209A" ,
    "inProductPromotions" : 1 ,
    "versionA" : 20,
-   "BooleanAttribute" : "true"
+   "BooleanAttribute" : "one"
   },
   {
   //Account Fields
