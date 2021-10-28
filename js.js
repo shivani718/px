@@ -30,7 +30,8 @@ aptrinsic("identify",
     "email": username,
     "college_id" : "1209A" ,
     "inProductPromotions" : 1,
-    "versionA" : 20
+    "versionA" : 20,
+    "BooleanAttribute" : 0
   },
   {
   //Account Fields
@@ -48,7 +49,8 @@ aptrinsic("identify",
     "email": username,
    "college_id" : "1209A" ,
    "inProductPromotions" : 1 ,
-   "versionA" : 20
+   "versionA" : 20,
+   "BooleanAttribute" : 0
   },
   {
   //Account Fields
@@ -68,7 +70,8 @@ aptrinsic("identify",
     "email": username,
     "college_id" : "1209A" ,
     "inProductPromotions" : 1 ,
-    "versionA" : 20
+    "versionA" : 20,
+    "BooleanAttribute" : 0
   },
   {
   //Account Fields
@@ -88,7 +91,8 @@ aptrinsic("identify",
                             "email": username,
                             "college_id" : "1209A" ,
                             "inProductPromotions" : 1 ,
-                            "versionA" : 20
+                            "versionA" : 20,
+                            "BooleanAttribute" : 0
                       
                             // "userHash": hash.toString()// optional transient for HMAC identification
                         },
