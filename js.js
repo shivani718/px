@@ -55,7 +55,7 @@ aptrinsic("identify",
     "id": myaccount.a3, //Required
     "name": myaccount.a3,
     "GPremiumlarge": 0,
-    "GPremiumsmall":
+    "GPremiumsmall": " "
  });
         }
           else if(username=="demouser99@gmail.com"){
