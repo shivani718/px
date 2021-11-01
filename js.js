@@ -30,7 +30,7 @@ aptrinsic("identify",
     "email": username,
     "college_id" : "1209A" ,
     "inProductPromotions" : 1,
-    "versionA" : 20,
+    "versionA" : 21,
     "BooleanAttribute" : 0
   },
   {
