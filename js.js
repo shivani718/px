@@ -207,8 +207,7 @@ let teamsystem = new CustomEvent('teamsystem', {
         Amountdeducted: this.Productpriceteamsystem,
         Paymentstatus: this.transactionStatusteamsystem
     }
-      
-
+ 
 aptrinsic('kcb', 'open');
 aptrinsic('kcb', 'open', {
   onDone: console.log
