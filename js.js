@@ -199,15 +199,6 @@ function transactiondone(ev1) {
     });
 }
 
-var Productpriceteamsystem = 90000;
-var transactionStatusteamsystem = "Success";
-
-let teamsystem = new CustomEvent('teamsystem', {
-    detail: {
-        Amountdeducted: this.Productpriceteamsystem,
-        Paymentstatus: this.transactionStatusteamsystem
-    }
- 
 aptrinsic('kcb', 'open');
 aptrinsic('kcb', 'open', {
   onDone: console.log
