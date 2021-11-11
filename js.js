@@ -199,6 +199,25 @@ function transactiondone(ev1) {
     });
 }
 
+var Productpriceteamsystem = 90000;
+var transactionStatusteamsystem = "Success";
+
+let teamsystem = new CustomEvent('teamsystem', {
+    detail: {
+        Amountdeducted: this.Productpriceteamsystem,
+        Paymentstatus: this.transactionStatusteamsystem
+    }
+      
+  function transactiondoneteamsystem(ev2) {
+
+    console.log(ev2.type, ev2.detail);
+    // Write your PX code here to track the custom events
+    aptrinsic('track', 'teamsystem', {
+        Amountdeducted: ev2.detail.Amountdeducted,
+        Paymentstatus: ev2.detail.Paymentstatus
+    });
+}    
+
 aptrinsic('kcb', 'open');
 aptrinsic('kcb', 'open', {
   onDone: console.log
