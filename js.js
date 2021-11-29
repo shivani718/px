@@ -60,8 +60,8 @@ aptrinsic("identify",
     "name": myaccount.a3,
     "GPremiumlarge": 0,
     "GPremiumsmall": " ",
-    "config" : 'false",
-    "meta" : 1
+    "config" : 'False",
+    "meta" : "True"
  });
         }
           else if(username=="demouser99@gmail.com"){
