@@ -60,7 +60,7 @@ aptrinsic("identify",
     "name": myaccount.a3,
     "GPremiumlarge": 0,
     "GPremiumsmall": " ",
-    "config" : 'False",
+    "config" : "false",
     "meta" : "True"
  });
         }
