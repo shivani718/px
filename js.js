@@ -36,7 +36,6 @@ function initializeGainsightPX()
     this.isGainsightPXInitialized = true;
 }
 
-initializeGainsightPX(); 
 
 function login()
     {
