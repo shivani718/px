@@ -58,7 +58,7 @@ function login()
 
     }
       if(username!=""){
-        if(username=="shivani.reddy00@gmail.com" || username=="scheemala@gainsight.com" || username=="demouser99@gmail.com" || username=="demouser0910@gmail.com" && password=="admin")
+        if(username=="shivani.reddy00@gmail.com" || username=="testuser@gmail.com" || username=="scheemala@gainsight.com" || username=="demouser99@gmail.com" || username=="demouser0910@gmail.com" && password=="admin")
         {
           b = username.substr(8, 6);
             var id = b;
@@ -152,6 +152,30 @@ aptrinsic("identify",
     "meta" : 1
  });
       }
+             
+        else if(username=="testuser@gmail.com"){
+          
+         //passing user and account objects:
+aptrinsic("identify",
+  {
+  //User Fields
+    "id": id, // Required for logged in app users
+    "email": username,
+    "college_id" : "1210test" ,
+    "inProductPromotions" : 1 ,
+    "versionA" : 20,
+    "BooleanAttribute" : 0
+  },
+  {
+  //Account Fields
+    "id": myaccount.a2, //Required
+    "name": myaccount.a2,
+    "GPremiumlarge": 1,
+    "GPremiumsmall": 1,
+    "config" : 0,
+    "meta" : 1
+ });
+      }     
         // location.href ="home.html";
         else
         {
