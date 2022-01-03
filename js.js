@@ -4,13 +4,15 @@
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-EMCLD0J9SEPQ-2");
 
-//test tag key
+//S_EU tag key
 <!-- Gainsight PX Tag-->
+  <script type="text/javascript">
   (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
       (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-9H6YVGUF2KZV-2");
+  })(window,document,"https://web-sdk-eu.aptrinsic.com/api/aptrinsic.js","AP-A0TCSVARXRXO-2");
+</script>
 <!-- Gainsight PX Tag-->
 
 //segment
