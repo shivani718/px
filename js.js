@@ -74,7 +74,8 @@ aptrinsic("identify",
     "college_id" : "1209A" ,
     "inProductPromotions" : 1,
     "versionA" : 21,
-    "BooleanAttribute" : 0
+    "BooleanAttribute" : 0,
+     "lang" : "de_DE"
   },
   {
   //Account Fields
@@ -95,7 +96,8 @@ aptrinsic("identify",
    "college_id" : "1209A" ,
    "inProductPromotions" : 1 ,
    "versionA" : 20,
-   "BooleanAttribute" : "false"
+   "BooleanAttribute" : "false",
+     "lang" : "en-us"
   },
   {
   //Account Fields
@@ -118,7 +120,8 @@ aptrinsic("identify",
     "college_id" : "1209A" ,
     "inProductPromotions" : 1 ,
     "versionA" : 20,
-    "BooleanAttribute" : 0
+    "BooleanAttribute" : 0,
+     "lang" : "de_DE"
   },
   {
   //Account Fields
