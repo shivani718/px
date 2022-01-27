@@ -215,9 +215,9 @@ aptrinsic("identify",
       }
     }
         
-//function deleteAllCookies() {
-//    window.aptrinsic('reset');
-//}
+function deleteAllCookies() {
+   window.aptrinsic('reset');
+}
 
 var Productname = "T.V";
 var Productbrand = "Panasonic";
