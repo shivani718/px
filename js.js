@@ -217,7 +217,6 @@ aptrinsic("identify",
         
 function deleteAllCookies() {
     window.aptrinsic('reset');
-    counter = 0;
 }
 
 var Productname = "T.V";
