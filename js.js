@@ -6,10 +6,10 @@
 //     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
 //   })(window,document,"https://web-sdk-eu.aptrinsic.com/api/aptrinsic.js","AP-A0TCSVARXRXO-2");
 // <!-- Gainsight PX Tag-->
-$(document).ready(function() {
-    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js');
-    $.getScript('https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js');
-     $.getScript('https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js');
+(document).ready(function() {
+   getScript('https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.min.js');
+   getScript('https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js');
+   getScript('https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js');
 });
 
 (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
