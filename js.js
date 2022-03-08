@@ -45,6 +45,7 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
 });
         }
   }
+   window.location = "https://shivani718.github.io/px/home.html";
 }
 // {
 //   "type": "identify",
