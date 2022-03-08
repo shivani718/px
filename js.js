@@ -15,7 +15,7 @@
   analytics.page();
   }}();
 
-var username = "scheemala@gainsight.com";
+// var username = "scheemala@gainsight.com";
 var idforhash = username.substr(6, 5);
 var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0af2GNwddQm3HX5GMur"));
 
@@ -25,10 +25,9 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
          
            var b = username.substr(6, 5);
 
-             
-  analytics.identify(b, {
+    analytics.identify(b, {
   name: "Peter Gibbons",
-  email: "scheemala@gainsightcom",
+  email: username,
   plan: "premium",
   logins: 5,
   userHash: hashUserId
