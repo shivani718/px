@@ -40,7 +40,7 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
   email: username,
   plan: "premium",
   logins: 5,
-  userHash: hashUserId
+  userHash: "shiv"
     
 });
         }
