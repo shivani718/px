@@ -24,6 +24,13 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
             b = username.substr(6, 5);
 
              
+//   analytics.identify("97980cfea0067", {
+//   name: "Peter Gibbons",
+//   email: "peter@example.com",
+//   plan: "premium",
+//   logins: 5,
+    
+// });
 {
   "type": "identify",
   "traits": {
@@ -32,7 +39,7 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
     "plan": "premium",
     "logins": 5
   },
-  "userId": b
+  "userId": b,
   "userHash": hashUserId
 }
 //testing HMAC option
