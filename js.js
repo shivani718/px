@@ -15,7 +15,17 @@
   analytics.page();
   }}();
 
-var username = "scheemala@gainsight.com";
+function validate(username)
+{
+var username=document.getElementById("username").value;
+var password=document.getElementById("password").value;
+    const myaccount = {
+        a1: "PX_Company-1",
+        a2: "PX_Company-2",
+        a3: "PX_Company-3",
+        a4: "PX_Company-4"
+
+    }
 var idforhash = username.substr(6, 5);
 var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0af2GNwddQm3HX5GMur"));
 
