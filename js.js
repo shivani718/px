@@ -15,13 +15,15 @@
   analytics.page();
   }}();
 
+var username;
 var idforhash = username.substr(6, 5);
 var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0af2GNwddQm3HX5GMur"));
 
   if(username!=""){
         if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
         {
-            b = username.substr(6, 5);
+         
+           var b = username.substr(6, 5);
 
              
   analytics.identify(b, {
