@@ -34,7 +34,7 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
         {
          
            var b = username.substr(6, 5);
-
+ if (username=="vinesh.gandhe@gmail.com") {
     analytics.identify(b, {
   name: "Peter Gibbons",
   email: username,
@@ -45,6 +45,17 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
 });
         }
   }
+  }else if (username=="scheemala@gainsight.com") {
+     analytics.identify(b, {
+  name: "Peter Gibbons",
+  email: username,
+  plan: "premium",
+  logins: 5,
+  userHash: hashUserId
+    
+});
+  }
+    
    window.location = "https://shivani718.github.io/px/home.html";
 }
 // {
