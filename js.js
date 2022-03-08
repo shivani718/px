@@ -45,6 +45,7 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
 });
         }
   }
+}
 // {
 //   "type": "identify",
 //   "traits": {
