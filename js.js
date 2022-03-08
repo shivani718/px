@@ -25,8 +25,8 @@ var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0a
 
              
 {
-  "type": "identify"
-  "traits": {
+  "type": "identify",
+  "traits" {
     "name": "Peter Gibbons",
     "email": "peter@example.com",
     "plan": "premium",
