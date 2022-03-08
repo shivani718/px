@@ -15,7 +15,7 @@
   analytics.page();
   }}();
 
-var username;
+var username = "";
 var idforhash = username.substr(6, 5);
 var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0af2GNwddQm3HX5GMur"));
 
