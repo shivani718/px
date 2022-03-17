@@ -3,17 +3,11 @@
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/enc-base64.min.js"/>
 // <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/hmac-sha256.min.js"></script>
 
-// (function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
-//      (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
-//     var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
-//     var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
-//   })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-EMCLD0J9SEPQ-2");
-
-// segment
-!function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="javWjpX2qUqY94GDjEB4FSXB8Y1gd6RK";;analytics.SNIPPET_VERSION="4.15.3";
-  analytics.load("javWjpX2qUqY94GDjEB4FSXB8Y1gd6RK");
-  analytics.page();
-  }}();
+(function(n,t,a,e,co){var i="aptrinsic";n[i]=n[i]||function(){
+     (n[i].q=n[i].q||[]).push(arguments)},n[i].p=e;n[i].c=co;
+    var r=t.createElement("script");r.async=!0,r.src=a+"?a="+e;
+    var c=t.getElementsByTagName("script")[0];c.parentNode.insertBefore(r,c)
+  })(window,document,"https://web-sdk.aptrinsic.com/api/aptrinsic.js","AP-EMCLD0J9SEPQ-2");
 
 function validate(username)
 {
@@ -26,28 +20,142 @@ var password=document.getElementById("password").value;
         a4: "PX_Company-4"
 
     }
-var idforhash = username.substr(6, 5);
-var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0af2GNwddQm3HX5GMur"));
 
-  if(username!=""){
+    if(username!=""){
         if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
         {
-         
-           var b = username.substr(6, 5);
- if (username=="vinesh.gandhe@gmail.com") {
-    analytics.identify(b, {
-  name: "Peter Gibbons",
-  email: username,
-  plan: "premium",
-  logins: 5,
-  userHash: hashUserId
-    
-});
+            alert("valid user");
+            b = username.substr(6, 5);
+            var id = b;
+//               var attrib_value= document.getElementById("myCheck").checked;
+            if (username=="vinesh.gandhe@gmail.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username,
+                            "gender": "male",
+//                             "useractive" :attrib_value,
+//                             "checkattrib":attrib_value,
+                            "customtest":"{working:yes,default:no,license:free}",
+                            
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a4, //Required
+                            "name": myaccount.a4,
+                            // flat custom attributes
+                        },
+                        
+                        );
+                } else if (username=="gvk7663@gmail.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "signUpDate": "06/01/2021 01:52pm",
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a3, //Required
+                            "name": myaccount.a3,
+                            // flat custom attributes
+                        });
+                } else if (username=="vgande@gainsight.com") {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a2, //Required
+                            "name": myaccount.a2,
+                            // flat custom attributes
+                        });
+                } else {
+                    aptrinsic('identify', {
+                            //User Fields
+                            "id": id, // Required for logged in app users
+                            "email": username
+
+                            // "userHash": hash.toString()// optional transient for HMAC identification
+                        },
+
+                        {
+                            //Account Fields
+                            "id": myaccount.a1, //Required
+                            "name": myaccount.a1,
+                            // flat custom attributes
+                        });
+                }
+
+            alert("Logged in user id :" + b);
+            //window.open("/HTML/home.html");
+            window.location = "https://shivani718.github.io/px/home.html";
+      
+            return false;
+
         }
-  }
-  }
-   window.location = "https://shivani718.github.io/px/home.html";
+        else
+        {
+            alert("login failed");
+        }
+    }
+        else{
+            alert("enter 'demouser7663@gmail.com'");
+        }
+
+
 }
+
+// segment
+// !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="javWjpX2qUqY94GDjEB4FSXB8Y1gd6RK";;analytics.SNIPPET_VERSION="4.15.3";
+//   analytics.load("javWjpX2qUqY94GDjEB4FSXB8Y1gd6RK");
+//   analytics.page();
+//   }}();
+
+// function validate(username)
+// {
+// var username=document.getElementById("username").value;
+// var password=document.getElementById("password").value;
+//     const myaccount = {
+//         a1: "PX_Company-1",
+//         a2: "PX_Company-2",
+//         a3: "PX_Company-3",
+//         a4: "PX_Company-4"
+
+//     }
+// var idforhash = username.substr(6, 5);
+// var hashUserId = String(CryptoJS.HmacSHA256(idforhash, "oceNJBXdda80ZBLaggCrza0af2GNwddQm3HX5GMur"));
+
+//   if(username!=""){
+//         if((username=="vinesh.gandhe@gmail.com" || username=="gvk7663@gmail.com" || username=="vgande@gainsight.com"||username=="demouser7663@gmail.com" || username=="scheemala@gainsight.com" || username=="shivanicheemala99@gmail.com")&& password=="user" )
+//         {
+         
+//            var b = username.substr(6, 5);
+//  if (username=="vinesh.gandhe@gmail.com") {
+//     analytics.identify(b, {
+//   name: "Peter Gibbons",
+//   email: username,
+//   plan: "premium",
+//   logins: 5,
+//   userHash: hashUserId
+    
+// });
+//         }
+//   }
+//   }
+//    window.location = "https://shivani718.github.io/px/home.html";
+// }
 // {
 //   "type": "identify",
 //   "traits": {
